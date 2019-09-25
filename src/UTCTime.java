@@ -4,7 +4,6 @@ import java.time.format.DateTimeFormatter;
 
 public class UTCTime {
     private LocalDateTime standardTime;
-
     public LocalDateTime getStandardTime() {
         return standardTime;
     }

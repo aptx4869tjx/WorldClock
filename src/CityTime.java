@@ -2,7 +2,6 @@ import java.time.LocalDateTime;
 
 public class CityTime implements Watcher {
     private String cityName;
-
     public String getCityName() {
         return cityName;
     }

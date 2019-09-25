@@ -7,6 +7,7 @@ public class MainTest {
     public static void main(String[] args) {
         UTCTime utcTime = new UTCTime();
         DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+        //设置UTC时间
         utcTime.setStandardTime();
         LocalDateTime standardTime = utcTime.getStandardTime();
         List<Watcher> watchers = new ArrayList<>();

@@ -5,7 +5,7 @@ import java.util.List;
 public abstract class Watched {
     public List<Watcher> watchers = new ArrayList<>();
 
-    public void addWatcher(Watcher watcher) {
+    void addWatcher(Watcher watcher) {
         watchers.add(watcher);
     }
 
@@ -13,7 +13,7 @@ public abstract class Watched {
         watchers.remove(watcher);
     }
 
-    public void notifyAllWatchers(LocalDateTime time) {
+    void notifyAllWatchers(LocalDateTime time) {
         for (Watcher watcher : watchers) {
             watcher.update(time);
         }

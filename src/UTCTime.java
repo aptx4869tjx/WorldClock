@@ -1,4 +1,6 @@
 import java.time.LocalDateTime;
+import java.time.ZoneOffset;
+import java.time.format.DateTimeFormatter;
 
 public class UTCTime {
     private LocalDateTime standardTime;
@@ -7,7 +9,8 @@ public class UTCTime {
         return standardTime;
     }
 
-    public void setStandardTime(LocalDateTime standardTime) {
-        this.standardTime = standardTime;
+    public void setStandardTime() {
+        LocalDateTime localDateTime = LocalDateTime.now(ZoneOffset.UTC);
+        this.standardTime = localDateTime;
     }
 }

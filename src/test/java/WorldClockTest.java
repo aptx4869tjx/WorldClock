@@ -48,8 +48,8 @@ public class WorldClockTest {
             CityTime localTime = (CityTime) watchers.get(j);
 //            System.out.println(durations.get(j).toMinutes());
 //            System.out.println(Duration.between(localTime.getLocalTime(), phoneTime.getPhoneTime()).toMinutes());
-            Assertions.assertEquals(durations.get(j).toHours(),
-                    Duration.between(localTime.getLocalTime(), phoneTime.getPhoneTime()).toHours());
+            Assertions.assertEquals(durations.get(j).toSeconds(),
+                    Duration.between(localTime.getLocalTime(), phoneTime.getPhoneTime()).toSeconds());
             System.out.println(localTime.getCityName() + "的时间为：" + dateTimeFormatter.format(localTime.getLocalTime()));
         }
     }

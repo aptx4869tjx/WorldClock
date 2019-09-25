@@ -35,7 +35,6 @@ public class WorldClockTest {
         for (Watcher watcher : watchers) {
             phoneTime.addWatcher(watcher);
         }
-        System.out.println("pre");
         //输出各个城市的时间
         for (int i = 0; i < watchers.size(); i++) {
             CityTime localTime = (CityTime) watchers.get(i);

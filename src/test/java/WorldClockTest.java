@@ -15,6 +15,7 @@ public class WorldClockTest {
         List<Duration> durations = new ArrayList<>();
         DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
         UTCTime utcTime = new UTCTime();
+
         //设置UTC时间
         utcTime.setStandardTime();
         LocalDateTime standardTime = utcTime.getStandardTime();
@@ -46,8 +47,6 @@ public class WorldClockTest {
         //输出各个城市的时间
         for (int j = 0; j < watchers.size(); j++) {
             CityTime localTime = (CityTime) watchers.get(j);
-//            System.out.println(durations.get(j).toMinutes());
-//            System.out.println(Duration.between(localTime.getLocalTime(), phoneTime.getPhoneTime()).toMinutes());
             Assertions.assertEquals(durations.get(j).toSeconds(),
                     Duration.between(localTime.getLocalTime(), phoneTime.getPhoneTime()).toSeconds());
             System.out.println(localTime.getCityName() + "的时间为：" + dateTimeFormatter.format(localTime.getLocalTime()));

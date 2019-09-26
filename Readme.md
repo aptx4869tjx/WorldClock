@@ -18,6 +18,7 @@
 - 单元测试则判断各个时区的时间与手机时间的差值在设置新的手机时间后是否保持一致
 - 单元测试代码在src.test.java包下
 
+单元测试结果如下：
 ![单元测试结果](https://github.com/aptx4869tjx/WorldClock/blob/master/src/main/resources/testResult.png)
 
 

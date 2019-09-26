@@ -10,13 +10,18 @@
 4.	REQ4: 若大堂墙壁上所有城市的时钟都或多或少有些走时不准，需要调整时间时，
 只需调准服务员手机的时间，那么墙上5个城市的时钟时间都能够相应地自动调整准确
 ---
-        本项目根据描述采用观察者模式实现并使用junit5进行单元测试
+###本项目根据描述采用观察者模式实现并使用junit5进行单元测试
 - 使用PhoneTime类的对象作为被观察者
 - 使用CityTime类的对象作为观察者
 - 使用UTCTime类生成标准的UTC时间对象
 - 各个类在src.main.java包下
 - 单元测试则判断各个时区的时间与手机时间的差值在设置新的手机时间后是否保持一致
 - 单元测试代码在src.test.java包下
+
+![单元测试结果](https://github.com/aptx4869tjx/WorldClock/blob/master/src/main/resources/testResult.png)
+
+
+
 
 
 
